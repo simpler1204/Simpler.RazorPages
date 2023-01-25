@@ -1,5 +1,7 @@
 @page
 
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -79,12 +81,12 @@
                             <!-- News item-->
                             <div class="mb-4">
                                 <div class="small text-muted">May 12, 2022</div>
-                                <a class="link-dark" href="#!"><h3>Start Bootstrap releases Bootstrap 5 updates for templates and themes</h3></a>
+                                <a class="link-dark" asp-page="/Blog/BlogPost" asp-route-id="1"><h3>Start Bootstrap releases Bootstrap 5 updates for templates and themes</h3></a>
                             </div>
                             <!-- News item-->
                             <div class="mb-5">
                                 <div class="small text-muted">May 5, 2022</div>
-                                <a class="link-dark" href="#!"><h3>Bootstrap 5 has officially landed</h3></a>
+                                <a class="link-dark" asp-page="/Blog/BlogPost" asp-route-id="2"><h3>Bootstrap 5 has officially landed</h3></a>
                             </div>
                             <!-- News item-->
                             <div class="mb-5">
