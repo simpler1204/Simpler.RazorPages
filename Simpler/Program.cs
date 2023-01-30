@@ -1,6 +1,13 @@
+using Simpler.Models;
+using Simpler.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
+
+//Di(의존성 주입)
+//PortfolioServiceJsonFile에는
+builder.Services.AddTransient<PortfolioServiceJsonFile>();
 
 var app = builder.Build();
 
