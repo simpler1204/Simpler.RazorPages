@@ -1,0 +1,23 @@
+﻿@using Simpler.Models;
+@using Simpler.Services;
+@using Microsoft.AspNetCore.Components;
+@inject PortfolioServiceJsonFile PortfolioService
+
+<h2>Blazor Component 사용 출력</h2>
+<div class="row gx-5">
+    @foreach (var portfolio in PortfolioService.GetPortfolios())
+    {
+        <div class="col-lg-6">
+            <div class="position-relative mb-5">
+                @* <img class="img-fluid rounded-3 mb-3 img-fluid" src=@portfolio.Image alt="..." />*@
+                <img class="portfolio-item-image" src=@portfolio.Image alt="..." />
+                @*<img class="portfolio-item-image" style="background-image:url('@portfolio.Image')">*@
+                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">@portfolio.Title</a>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+
+}

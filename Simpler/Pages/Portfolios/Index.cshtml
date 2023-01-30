@@ -6,6 +6,8 @@
     ViewBag.Title = "Portfolio Index";  
 }
 
+@using Simpler.Components;
+
 <!-- Page Content-->
 <section class="py-5">
     <div class="container px-5 my-5">
@@ -26,6 +28,11 @@
                 </div>
             }
         </div>
+
+        <hr/>
+        <component type="typeof(PortfolioList)" render-mode="ServerPrerendered" />
+        <script src="_framework/blazor.server.js"></script>
+
     </div>
 </section>
 <section class="py-5 bg-light">
