@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": ".NET",
+    "description": "ASP.NET Core",
+    "img": "/Portfolios/images/browser.png"
+  },
+  {
+    "id": 2,
+    "title": "Java",
+    "description": "Spring boot",
+    "img": "/Portfolios/images/chat.png"
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "description": "JavaScript",
+    "img": "/Portfolios/images/editor.png"
+  },
+  {
+    "id": 4,
+    "title": "C++",
+    "description": "Qt Progamming",
+    "img": "/Portfolios/images/mail.png"
+  }
+]
